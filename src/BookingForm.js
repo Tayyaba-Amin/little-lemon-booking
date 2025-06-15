@@ -1,5 +1,5 @@
 import React from "react";
-
+import './BookingForm.css';
 function BookingForm({ availableTimes }) {
   const [formData, setFormData] = React.useState({
     name: "",
