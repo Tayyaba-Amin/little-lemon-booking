@@ -47,3 +47,15 @@ p {
   margin-top: 15px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+    margin: 20px;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
