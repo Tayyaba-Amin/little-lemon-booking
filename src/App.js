@@ -1,12 +1,14 @@
-import React from 'react';
-import BookingForm from './BookingForm';
-import './App.css';
+import React from "react";
+import BookingForm from "./BookingForm";
 
 function App() {
+  const [availableTimes, setAvailableTimes] = React.useState([
+    "17:00", "18:00", "19:00", "20:00", "21:00"
+  ]);
+
   return (
-    <div className="App">
-      <h1>Book a Table at Little Lemon 🍋</h1>
-      <BookingForm />
+    <div>
+      <BookingForm availableTimes={availableTimes} />
     </div>
   );
 }
